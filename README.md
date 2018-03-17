@@ -60,20 +60,24 @@ Extract the archive you downloaded using the tar command.
 The next step is to configure the Kakfa server by opening the server.properties using text editor "nano"
 + nano ~/kafka/config/server.properties
 
-By default, Kafka doesn't allow you to delete topics. To be able to delete topics, add the following line at the end of the file
+By default, Kafka doesn't allow you to delete topics. To be able to delete topics, add the following line at the end of the file:
+
 **delete.topic.enable=true**
 
-Save the file by using control "S" and exit the text editor by using control "X". Make sure it saved! Or else the following steps won't work. 
+Save the file by using control "S" and exit the text editor by using control "X". Make sure the file saved! Or else the following steps won't work. 
 
 ### Start the Kafka Server
 
 Run the kafka-server-start.sh script using nohup to start the Kafka server as a background process that is independent of your shell session.
 + bin/kafka-server-start.sh config/server.properties
 
-###### I got an error saying "cannot allocate memory" (errno=12), if you get the same, you can use this command to solve the issue:
+---
+I got an error saying "cannot allocate memory" (errno=12), if you get the same, you can use this command to solve the issue:
 + export KAFKA_HEAP_OPTS="-Xmx256M -Xms128M"
 
-###### Then run the above command again, it should work!
+Then run the above command again, it should work!
+
+---
 
 ### Create a Topic
 
@@ -114,5 +118,6 @@ Then enter the following command in order to see the messages the producer sent:
 By using this command you will see everything that was written in the Producer since the beginning on the test topic. 
 
 Also, since you have both commands running in a different terminals, you can play around and type messages into the producer terminal and see them appear in the consumer terminal.
+
 
 #### Good luck! 
