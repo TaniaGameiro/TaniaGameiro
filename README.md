@@ -2,6 +2,8 @@
 
 After you spin up your Ubuntu server in [AWS](https://aws.amazon.com), you will need to open your terminal and follow the simple steps below.
 
+*Take note, these steps were done on a Mac.*
+
 ### Open your Terminal 
 
 Write the following command to access your ubuntu server, but ensure you modify the ".pem" file information, as well as your ububtu server number:
