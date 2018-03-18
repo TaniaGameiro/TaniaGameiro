@@ -99,11 +99,11 @@ Then run the above command again, it should work!
 We can create a topic named "test" with a single partition and only one replica. We can open a new terminal or use the one that is already open. 
 If you're opening another terminal, you will need to reconnect to your ubuntu and kafka:
 
-`ssh -i ~/.ssh/TaniaG.pem ubuntu@54.172.154.223
+`ssh -i ~/.ssh/TaniaG.pem ubuntu@54.172.154.223`
 
-su - kafka
+`su - kafka`
 
-cd ~/kafka`
+`cd ~/kafka`
 
 Then create your new topic with this command (replace "test" in the command with whatever you want to name your test):
 
@@ -130,11 +130,11 @@ You will see ">" appear in the next line. Write a few words and hit enter, and r
 Kafka also has a command line consumer that will dump out messages to standard output. 
 Start by opening another terminal where you will need to reconnect to your ubuntu and kafka:
 
-`ssh -i ~/.ssh/TaniaG.pem ubuntu@54.172.154.223
+`ssh -i ~/.ssh/TaniaG.pem ubuntu@54.172.154.223`
 
-su - kafka
+`su - kafka`
 
-cd ~/kafka`
+`cd ~/kafka`
 
 Then enter the following command in order to see the messages the producer sent:
 
