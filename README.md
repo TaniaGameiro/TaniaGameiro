@@ -6,7 +6,7 @@ After you spin up your Ubuntu server in [AWS](https://aws.amazon.com), you will 
 
 ### Open your Terminal 
 
-Write the following command to access your ubuntu server, but ensure you modify the ".pem" file information, as well as your ububtu server number:
+Write the following command to access your ubuntu server, but ensure you modify the ".pem" file information, as well as your ubuntu server number:
 
 `ssh -i ~/.ssh/TaniaG.pem ubuntu@54.172.154.223`
 
